@@ -48,7 +48,7 @@
 			needHeight();
 		});
 
-        // $(window).scrollTop(0);
+        $(window).scrollTop(0);
 		$( ".focusClass" ).focusin(function() {
 		  	// $('body').css('position','unset');
             // keyboardCheck()
@@ -145,7 +145,7 @@
 			    	$('#input_height').attr( "readonly" , true );
 			    	$('#input_weight').attr( "readonly" , true );
 			    	showPatientResults();
-			    	// $(window).scrollTop(0);
+			    	$(window).scrollTop(0);
 			    }
 			}
 		});
@@ -160,7 +160,7 @@
 				    	$('#input_height').attr( "readonly" , true );
 				    	$('#input_weight').attr( "readonly" , true );
 				    	showPatientResults();
-				    	// $(window).scrollTop(0);
+				    	$(window).scrollTop(0);
 				    }
 				}
 			}

@@ -47,10 +47,10 @@
 			needHeight();
 		});
 
-        // $(window).scrollTop(0);
+        $(window).scrollTop(0);
 		$( ".focusClass" ).focusin(function() {
-		  	$('body').css('position','unset');
-            keyboardCheck()
+		  	// $('body').css('position','unset');
+            // keyboardCheck()
 		});
 		$( ".focusClass" ).focusout(function() {
 		  	// if($(this).val() ==''){
