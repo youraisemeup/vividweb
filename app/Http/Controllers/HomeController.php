@@ -76,7 +76,7 @@ class HomeController extends Controller
 
         $dataArray = Input::all();
 
-        Log::info('dataArray', array("abcd_test "));
+        Log::info('dataArray', $dataArray);
         if(!empty($dataArray['vtype'])){
             Log::info("1");
             $valveData2 = ValveInfo::where('failed_type','=', $dataArray['vtype'])->get();
