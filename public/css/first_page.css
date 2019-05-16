@@ -1,0 +1,52 @@
+/* .wrapper {
+  min-height: 100vh;
+}
+
+.vivid-tabs.weighing.sp-btn.margin-bottom-70 {
+  margin-bottom: 55px;
+}
+
+@media (max-width:1024px) and (device-aspect-ratio: 40/71) {
+  body {
+    position: fixed;
+    width: 100%;
+  }
+
+  
+  .custom-re-button-r {
+    position: relative !important;
+  }
+
+  .center-wrapper {
+    margin-top: 0;
+  }
+}
+
+@media (max-width:1024px) and (device-aspect-ratio: 2/3) {
+  body {
+    position: fixed;
+    width: 100%;
+  }
+}
+
+@media (max-width:1024px) and (device-aspect-ratio: 375/667) {
+  body {
+    position: fixed;
+    width: 100%;
+  }
+}
+
+@media (max-width:1024px) and (device-aspect-ratio: 16/9) {
+  body {
+    position: fixed;
+    width: 100%;
+  }
+}
+
+
+@media (max-width:1024px) and (device-aspect-ratio: 3/4) {
+  body {
+    position: fixed;
+    width: 100%;
+  }
+} */

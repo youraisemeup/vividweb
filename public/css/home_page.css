@@ -1,0 +1,28 @@
+.center-wrapper{
+        /* padding-bottom: 70px;*/
+         }
+         .wrapper.home {
+         min-height: 100vh;
+         }
+         .wrapper {
+         min-height: 100vh;
+         }
+
+@media (max-width:768px) {
+          .button-start {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+}
+@media (max-width: 1024px){
+.wrapper.home {
+    min-height: 90vh !important;
+}
+}
+@media (max-width: 768px)
+{
+  .center-wrapper {
+    min-height: 55vh !important;
+    margin-top: 3.3rem;
+}
+}
