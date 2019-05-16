@@ -50,7 +50,7 @@
 
         $(window).scrollTop(0);
 		$( ".focusClass" ).focusin(function() {
-		  	// $('body').css('position','unset');
+		  	$('body').css('position','unset');
             // keyboardCheck()
 		});
 		$( ".focusClass" ).focusout(function() {
@@ -58,6 +58,7 @@
 		  	//     $('body').css('position','fixed');
 		  	// }
         });
+
 		if(localStorage.getItem('wt')){
             showPatientResults();
 			$('body').css('position','unset');
@@ -151,7 +152,12 @@
 		});
 
 		$('.focusClass').on('keyup', function(event) {
+            console.log($(this))
 			if (event.keyCode === 13) {
+                if($(this)[0].id == "input_height") {
+                    $("#input_weight").trigger("focus");
+                }
+
 				if($(this).val() != ''){
 				    //$( this ).attr( "readonly" , "true" );
 				    if($('#input_height').val() != '' && $('#input_weight').val() != '' ){
@@ -291,13 +297,13 @@
 		    }
    		});
 
-        document.getElementById("input_height")
-            .addEventListener("keyup", function(event) {
-            event.preventDefault();
-            if (event.keyCode === 13) {
-                $("#input_weight").trigger("focus");
-            }
-        });
+        // document.getElementById("input_height")
+        //     .addEventListener("keyup", function(event) {
+        //     event.preventDefault();
+        //     if (event.keyCode === 13) {
+        //         $("#input_weight").trigger("focus");
+        //     }
+        // });
 
    		$("#input_weight").keypress(function (e) {
                console.log('evalue', e)
@@ -311,7 +317,7 @@
 
 		$('.resetForm').on('click', function(){
 			localStorage.clear();
-			$('body').css('position','fixed');
+			// $('body').css('position','fixed');
 			$('.custom-re-button').removeClass('custom-re-button-r');
 			$('.focusClass').attr("readonly", false);
 			$('.focusClass').val("");
@@ -363,7 +369,7 @@
 			<div class="col-6">
 				<div class="form-group  pull-right">
 					<label for="weight">WEIGHT ({{ $weightunit }})</label>
-					<input type="text" id="input_weight" style="color: #21308b;" name="input_weight" class="form-control focusClass"  value="{{ @$data['Data']['input_weight'] }}" <?php if(@$data['ResCode'] == 100 ){ echo "readonly"; } ?>>
+					<input type="text" id="input_weight" style="color: #21308b;" name="input_weight" class="form-control focusClass" value="{{ @$data['Data']['input_weight'] }}" <?php if(@$data['ResCode'] == 100 ){ echo "readonly"; } ?>>
 				</div>
 			</div>
 		</div>

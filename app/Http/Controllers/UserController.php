@@ -13,15 +13,16 @@ use App\Admin;
 use Validator;
 use Illuminate\Http\Request;
 use Newsletter;
+use Log;
 
 class UserController extends Controller
 {
 
 	/* Start code to Subscribe User data */
-public function mailchimp(){
+    public function mailchimp(){
 
-	Newsletter::subscribe('test@discworld.com', ['firstName'=>'Rince', 'lastName'=>'Wind'], 'subscribers');
-}
+        Newsletter::subscribe('test@discworld.com', ['firstName'=>'Rince', 'lastName'=>'Wind'], 'subscribers');
+    }
 
 
 	public function usersubscribe(Request $request)
@@ -69,18 +70,19 @@ public function mailchimp(){
 		 				$message->from('vivid@mg.prpl.io','VIVID');
 					});
 
-						if( count(Mail::failures()) > 0 ) {
-						   echo "There was one or more failures. They were: <br />";
-						} else {
-							$response['ResCode'] = 1;
-							$response['ResMsg'] = 'Email Sent. Check your inbox.';
-							$response['id'] = $id;
-						}					/*End  Email Sending Code */
-						$n = explode(' ', $inputData['name']);
+                    if( count(Mail::failures()) > 0 ) {
+                        echo "There was one or more failures. They were: <br />";
+                    } else {
+                        $response['ResCode'] = 1;
+                        $response['ResMsg'] = 'Email Sent. Check your inbox.';
+                        $response['id'] = $id;
+                    }					/*End  Email Sending Code */
+                    $n = explode(' ', $inputData['name']);
+                    Log::info('newsletter loginfo', array(Newsletter::getApi()->getLastResponse()));
 					if(@$inputData['approved'] == true){
-						$response['mailchimp'] = Newsletter::subscribe($inputData['email'], ['firstName'=>@$n[0], 'lastName'=>@$n[1]], 'subscribers');
+						$response['mailchimp'] = Newsletter::subscribe($inputData['email'], ['FNAME'=>@$n[0], 'LNAME'=>@$n[1]], 'subscribers');
 					}else if(@$inputData['approved'] ==false){
-						$response['mailchimp'] = Newsletter::subscribe($inputData['email'], ['firstName'=>@$n[0], 'lastName'=>@$n[1]], 'non-subscribers');
+						$response['mailchimp'] = Newsletter::subscribe($inputData['email'], ['FNAME'=>@$n[0], 'LNAME'=>@$n[1]], 'non-subscribers');
 					}
 			}else{
 				$old_id = $data[0]['id'];
@@ -108,11 +110,12 @@ public function mailchimp(){
 							$response['ResMsg'] = 'Email Sent. Check your inbox.';
 							$response['id'] = $old_id;
 						}
-						$n = explode(' ', $inputData['name']);
+                        $n = explode(' ', $inputData['name']);
+                        Log::info('newsletter loginfo', array(Newsletter::getApi()->getLastResponse()));
 					if(@$inputData['approved'] == true){
-						$response['mailchimp'] = Newsletter::subscribe($inputData['email'], ['firstName'=>@$n[0], 'lastName'=>@$n[1]], 'subscribers');
-					}else if(@$inputData['approved'] ==false){
-						$response['mailchimp'] = Newsletter::subscribe($inputData['email'], ['firstName'=>@$n[0], 'lastName'=>@$n[1]], 'non-subscribers');
+						$response['mailchimp'] = Newsletter::subscribe($inputData['email'], ['FNAME'=>@$n[0], 'LNAME'=>@$n[1]], 'subscribers');
+					}else if(@$inputData['approved'] == false){
+						$response['mailchimp'] = Newsletter::subscribe($inputData['email'], ['FNAME'=>@$n[0], 'LNAME'=>@$n[1]], 'non-subscribers');
 					}
 				}
 		}
