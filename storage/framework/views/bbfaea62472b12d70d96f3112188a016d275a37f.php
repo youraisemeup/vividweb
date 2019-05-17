@@ -171,7 +171,10 @@
             localStorage.setItem('labelsize_status', ddllabelCurrentValue)
 			var dplist="<option value='Stenosis/Mixed'>Mixed/Stenosis</option>";
 			dplist+="<option value='Regurgitation'>Regurgitation</option>";
-            $("#MechanismFailure").html('<option value="0">MACHANISM OF FAILURE </option>'+dplist);
+
+            var mech = localStorage.getItem('mechanismFailure_status');
+            $('#MechanismFailure').html('<option value="'+mech+'">'+mech+'</option>');
+
             if(localStorage.getItem('valvetype_status') && localStorage.getItem('labelsize_status') && localStorage.getItem('mechanismFailure_status')) {
                 checkFailvalve();
             }
