@@ -256,14 +256,14 @@ class HomeController extends Controller
                             associated with high risk of elevated\n
                             post procedural gradients.";
                             if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                             }else{
                                 $disc2="";
                             }
                      }else{
                         $disc1="";
                             if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                             }else{
                                 $disc2="";
                             }
@@ -276,7 +276,7 @@ class HomeController extends Controller
                             associated with high risk of elevated\n
                             post procedural gradients.";
                             if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                             }else{
                                 $disc2="";
                             }
@@ -284,7 +284,7 @@ class HomeController extends Controller
                      }else{
                         $disc1="";
                             if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                             }else{
                                 $disc2="";
                             }
@@ -300,14 +300,14 @@ class HomeController extends Controller
                             is warranted in order to reduce the risk \n
                             of elevated post procedural gradients.";
                             if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                             }else{
                                 $disc2="";
                             }
                      }else{
                         $disc1="";
                             if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                             }else{
                                 $disc2="";
                             }
@@ -319,7 +319,7 @@ class HomeController extends Controller
                             is warranted in order to reduce the risk \n
                             of elevated post procedural gradients.";
                              if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                             }else{
                                 $disc2="";
                             }
@@ -327,7 +327,7 @@ class HomeController extends Controller
                      }else{
                         $disc1="";
                             if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                                $disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                             }else{
                                 $disc2="";
                             }
@@ -608,14 +608,14 @@ class HomeController extends Controller
                         associated with high risk of elevated\n
                         post procedural gradients.";
                         if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                         }else{
                         	$disc2="";
                         }
                  }else{
                  	$disc1="";
                         if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                         }else{
                         	$disc2="";
                         }
@@ -628,7 +628,7 @@ class HomeController extends Controller
                         associated with high risk of elevated\n
                         post procedural gradients.";
                         if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                         }else{
                         	$disc2="";
                         }
@@ -636,7 +636,7 @@ class HomeController extends Controller
                  }else{
                  	$disc1="";
                         if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                         }else{
                         	$disc2="";
                         }
@@ -652,14 +652,14 @@ class HomeController extends Controller
                         is warranted in order to reduce the risk \n
                         of elevated post procedural gradients.";
                         if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                         }else{
                         	$disc2="";
                         }
                  }else{
                  	$disc1="";
                         if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                         }else{
                         	$disc2="";
                         }
@@ -671,7 +671,7 @@ class HomeController extends Controller
                         is warranted in order to reduce the risk \n
                         of elevated post procedural gradients.";
 	                     if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                         }else{
                         	$disc2="";
                         }
@@ -679,7 +679,7 @@ class HomeController extends Controller
                  }else{
                  	$disc1="";
                         if($trueid <=19 && $mechanism == "Regurgitation" || $mechanism == "Stenosis/Mixed" && $trueid<=21){
-                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.";
+                        	$disc2 = "BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.";
                         }else{
                         	$disc2="";
                         }
