@@ -287,7 +287,7 @@ function closeNav() {
       <script src="{{url('admin/js/tooltips.js')}}"></script>
       <!-- <script src="{{url('admin/js/charts.js')}}"></script>
       <script src="{{url('admin/js/main.js')}}"></script> -->
-      <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
       <script src="{{url('js/jquery.dataTables.min.js')}}" type="text/javascript"></script>
       <script src="{{url('js/dataTables.bootstrap4.min.js')}}"></script>
       <script src="{{url('js/bootstrap.min.js')}}"  type="text/javascript"></script>

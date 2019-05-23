@@ -73,7 +73,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 					dics2++;
 				}
 				if(dics2 > 0){
-					$('#descript2').html('BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being study.')
+					$('#descript2').html('BVF may effectively reduce the risk of elevated post procedural gradients, which may be important in this condition. The safety of this approach is being studied.')
 				} else {
 					$('#descript2').html('');
 				}
